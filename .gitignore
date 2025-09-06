@@ -1,22 +1,46 @@
-# Python
+# -----------------------
+# Python cache & build
+# -----------------------
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Environments
-.env
-.venv/
+*.py[cod]
+*.so
+*.egg
 *.egg-info/
+dist/
+build/
+
+# -----------------------
+# Virtual environment
+# -----------------------
+rag-finance-complaints-eval-venv/
+.venv/
+env/
 venv/
 
-# Data
-data/*
-!data/.gitkeep
+# -----------------------
+# Data files
+# -----------------------
+data/raw/*
+data/processed/*
+*.csv
+*.json
+*.xlsx
+*.parquet
 
-# Notebooks
-.ipynb_checkpoints
+# -----------------------
+# Jupyter
+# -----------------------
+.ipynb_checkpoints/
 
-# IDE
+# -----------------------
+# IDE / Editors
+# -----------------------
 .vscode/
 .idea/
+*.swp
+
+# -----------------------
+# System files
+# -----------------------
+.DS_Store
+Thumbs.db
